@@ -1,0 +1,13 @@
+.pagination-box{
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+    .pagination-box:last-child{
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+.footer{
+    height: 8em;
+    width: 100%;
+
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, rgba(29, 53, 87, 1), rgba(58, 80, 107, 1));
+}
+
+.footer__info{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info p{
+    width: 90%;
+    margin: 0;
+
+    color: #eef4ed;
+    text-align: center;
+    font-size: .9em;
+}
+
+@media (min-width: 1024px) {
+    .footer__info p{
+        font-size: 1em;
+    }
+}

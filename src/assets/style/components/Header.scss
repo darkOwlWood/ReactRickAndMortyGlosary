@@ -1,0 +1,50 @@
+.header{
+    height: 12em;
+    width: 100%;
+    
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../static/RichYMoryWide_1_4.jpg");
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color:#eff7f6;
+    text-align: center;
+    background-image: linear-gradient(to top , rgba(58, 80, 107, 1), rgba(50, 120, 163, 0.4));
+}
+
+.container__title{
+    font-size: 1.3em;
+}
+
+.container__info{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.container__info p{
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: .9em;
+}
+
+@media (min-width: 1024px) {
+    .header{
+        height: 14em;
+        background-position: center 40%;
+    }
+    
+    .container__info p{
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,28 @@
+.pagination-button{
+    width: 30%;
+    line-height: 30px;
+    outline: none;
+
+    color:#eff7f6;
+    background-color: transparent;
+    border: solid #eff7f6;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.pagination-button:active{
+    background-color: #001233;
+}
+
+@media (min-width: 1024px) {
+    .pagination-button{
+        box-shadow: 5px 5px 0 #5bc0be;
+        transition: 1s box-shadow,
+                   .2s background-color;
+    }
+
+    .pagination-button:hover{
+        box-shadow: none;
+    }
+}
