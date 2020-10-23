@@ -1,12 +1,13 @@
 const path = require('path');
+const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle-[hash].js',
+        filename: 'bundle-[fullhash].js',
         publicPath: '/',
     },
     resolve: {
@@ -37,5 +38,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname,'public','index.html'),
         }),
+        new Webpack.DllReferencePlugin({
+            manifest: require('./modules-manifest.json'),
+        }),
+        new AddAssetHtmlPlugin({
+            filepath: path.resolve(__dirname,'dist','modules.js'),
+            publicPath: '/',
+        })
     ],
 };

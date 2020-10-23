@@ -4,8 +4,8 @@
     margin-bottom: 20px;
 
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.5em;
     border-radius: 10px;
@@ -38,7 +38,7 @@
     padding-right: 5px;
 }
 
-.glossary-card__dimension{
+.glossary-card__species{
     font-size: .9em;
     color: #b7e4c7;
 }
@@ -80,9 +80,5 @@
         padding-top: 5px;
         padding-bottom: 5px;
         font-size: 1.2em;
-    }
-
-    .glossary-card__image{
-        width: 90%;
     }
 }

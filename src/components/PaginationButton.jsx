@@ -1,9 +1,9 @@
 import React from 'react';
-import '../assets/style/components/PaginationButton.scss';
+import '../assets/style/components/PaginationButton.scss'; 
 
-const PaginationButton = ({name,className}) => {
+const PaginationButton = ({name, onClick, className}) => {
     return (
-        <button className={`pagination-button ${className}`}>
+        <button className={`pagination-button ${className}`} onClick={onClick}>
             {name}
         </button>
     );

@@ -2,11 +2,19 @@ import React from 'react';
 import '../assets/style/components/PaginationBox.scss';
 import PaginationButton from './PaginationButton';
 
-const PaginationBox = () => {
+const PaginationBox = ({previousPage, nextPage}) => {
     return (
         <div className="pagination-box">
-            <PaginationButton name="next" className="pagination-button--prev"/>
-            <PaginationButton name="prev" className="pagination-button--next"/>
+            <PaginationButton 
+                name="Prev"
+                onClick={previousPage} 
+                className="pagination-button--prev"
+            />
+            <PaginationButton 
+                name="Next"
+                onClick={nextPage}
+                className="pagination-button--next"
+            />
         </div>
     );
 }
