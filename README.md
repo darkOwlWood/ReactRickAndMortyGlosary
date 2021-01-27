@@ -13,6 +13,10 @@ To install the project you should have :
 * npm 6.14.8
 
 ### Start to use
+First, change to the root directory of the project and install all the necessary dependencies and dev-dependencies with the command:
+```
+npm i
+```
 
 #### Development ambient
 If you want to start a dev ambient you should be at the root directory and execute the the next command in the console:
