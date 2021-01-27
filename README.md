@@ -46,3 +46,6 @@ After run the previous command all the bundle generated will be in the dist dire
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+External resources
+* API: https://rickandmortyapi.com/
